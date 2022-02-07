@@ -12,13 +12,23 @@ struct QuoteView: View {
 	
 	var body: some View {
 		VStack(alignment: .leading, spacing: 8) {
+			HStack {
+				Image(systemName: "tv")
+					.font(.system(size: 12, weight: .black))
+				Text(quote.anime)
+			}
 			
+			Text(quote.character)
+			Text(quote.quote)
 		}
+		.padding()
+		.foregroundColor(.black)
 	}
 }
 
 struct QuoteView_Previews: PreviewProvider {
 	static var previews: some View {
-		QuoteView(quote: Quote.mockData)
+		QuoteView(quote: Quote.mockQuote)
+			.previewLayout(.sizeThatFits)
 	}
 }

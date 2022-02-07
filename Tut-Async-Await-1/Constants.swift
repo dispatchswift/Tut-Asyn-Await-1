@@ -8,5 +8,5 @@
 import Foundation
 
 enum APIConstants {
-	static let baseURL = ""
+	static let baseURL = "https://animechan.vercel.app"
 }

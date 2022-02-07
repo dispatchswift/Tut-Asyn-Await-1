@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct QuotesView: View {
+	@StateObject private var viewModel = QuotesViewModel(service: QuoteService())
+	
 	var body: some View {
-		List {
-			ForEach(quotes) { quote in
-				QuoteView(quote: quote)
+		Group {
+			if viewModel.quotes.isEmpty {
+				VStack {
+					LoadingView(title: "Loading Quotes...")
+				}
+			} else {
+				List {
+					ForEach(viewModel.quotes, id: \.anime) { quote in
+						QuoteView(quote: quote)
+					}
+				}
 			}
+		}
+		.task {
+			await viewModel.getRandomQuotes()
 		}
 	}
 }

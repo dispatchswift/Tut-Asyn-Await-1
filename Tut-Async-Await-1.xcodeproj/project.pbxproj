@@ -16,6 +16,7 @@
 		C803542227B1720B0071BA72 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C803542127B1720B0071BA72 /* QuoteService.swift */; };
 		C803542527B173590071BA72 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C803542427B173590071BA72 /* Constants.swift */; };
 		C803542727B1743E0071BA72 /* QuotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C803542627B1743E0071BA72 /* QuotesViewModel.swift */; };
+		C803542927B17C440071BA72 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C803542827B17C440071BA72 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		C803542127B1720B0071BA72 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
 		C803542427B173590071BA72 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C803542627B1743E0071BA72 /* QuotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewModel.swift; sourceTree = "<group>"; };
+		C803542827B17C440071BA72 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +63,9 @@
 		C803540927B16E950071BA72 /* Tut-Async-Await-1 */ = {
 			isa = PBXGroup;
 			children = (
-				C803540A27B16E950071BA72 /* Tut_Async_Await_1App.swift */,
 				C803542427B173590071BA72 /* Constants.swift */,
+				C803540A27B16E950071BA72 /* Tut_Async_Await_1App.swift */,
 				C803541A27B16EC20071BA72 /* Models */,
-				C803541027B16E980071BA72 /* Preview Content */,
 				C803542027B1700E0071BA72 /* Resources */,
 				C803541F27B170050071BA72 /* Services */,
 				C803541927B16EB10071BA72 /* ViewModels */,
@@ -84,6 +85,7 @@
 		C803541827B16EAC0071BA72 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C803542A27B17C460071BA72 /* Base */,
 				C803540C27B16E950071BA72 /* QuotesView.swift */,
 				C803541D27B16F110071BA72 /* QuoteView.swift */,
 			);
@@ -118,8 +120,17 @@
 			isa = PBXGroup;
 			children = (
 				C803540E27B16E980071BA72 /* Assets.xcassets */,
+				C803541027B16E980071BA72 /* Preview Content */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C803542A27B17C460071BA72 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C803542827B17C440071BA72 /* LoadingView.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 				C803542227B1720B0071BA72 /* QuoteService.swift in Sources */,
 				C803540B27B16E950071BA72 /* Tut_Async_Await_1App.swift in Sources */,
 				C803541E27B16F110071BA72 /* QuoteView.swift in Sources */,
+				C803542927B17C440071BA72 /* LoadingView.swift in Sources */,
 				C803542527B173590071BA72 /* Constants.swift in Sources */,
 				C803542727B1743E0071BA72 /* QuotesViewModel.swift in Sources */,
 			);
@@ -328,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Tut-Async-Await-1/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Tut-Async-Await-1/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = P244M8PUET;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -342,7 +354,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.consciousprojectsllc.Tut-Async-Await-1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dispatchswift.Tut-Async-Await-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -357,7 +369,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Tut-Async-Await-1/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Tut-Async-Await-1/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = P244M8PUET;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -371,7 +383,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.consciousprojectsllc.Tut-Async-Await-1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dispatchswift.Tut-Async-Await-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
