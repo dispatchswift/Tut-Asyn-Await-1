@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct Tut_Async_Await_1App: App {
-    var body: some Scene {
-        WindowGroup {
-            QuotesView()
-        }
-    }
+	var body: some Scene {
+		WindowGroup {
+			QuotesView()
+		}
+	}
 }

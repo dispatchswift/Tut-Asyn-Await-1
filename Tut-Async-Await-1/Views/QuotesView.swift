@@ -11,18 +11,19 @@ struct QuotesView: View {
 	@StateObject private var viewModel = QuotesViewModel(service: QuoteService())
 	
 	var body: some View {
-		Group {
-			if viewModel.quotes.isEmpty {
-				VStack {
+		NavigationView {
+			Group {
+				if viewModel.quotes.isEmpty {
 					LoadingView(title: "Loading Quotes...")
-				}
-			} else {
-				List {
-					ForEach(viewModel.quotes, id: \.anime) { quote in
-						QuoteView(quote: quote)
+				} else {
+					List {
+						ForEach(viewModel.quotes, id: \.anime) { quote in
+							QuoteView(quote: quote)
+						}
 					}
 				}
 			}
+			.navigationBarTitle("Quotes")
 		}
 		.task {
 			await viewModel.getRandomQuotes()

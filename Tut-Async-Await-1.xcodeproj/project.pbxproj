@@ -63,11 +63,11 @@
 		C803540927B16E950071BA72 /* Tut-Async-Await-1 */ = {
 			isa = PBXGroup;
 			children = (
-				C803542427B173590071BA72 /* Constants.swift */,
 				C803540A27B16E950071BA72 /* Tut_Async_Await_1App.swift */,
 				C803541A27B16EC20071BA72 /* Models */,
 				C803542027B1700E0071BA72 /* Resources */,
 				C803541F27B170050071BA72 /* Services */,
+				C803542B27B1A0E00071BA72 /* Utilities */,
 				C803541927B16EB10071BA72 /* ViewModels */,
 				C803541827B16EAC0071BA72 /* Views */,
 			);
@@ -131,6 +131,14 @@
 				C803542827B17C440071BA72 /* LoadingView.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		C803542B27B1A0E00071BA72 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C803542427B173590071BA72 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
