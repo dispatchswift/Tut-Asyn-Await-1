@@ -11,7 +11,7 @@ import SwiftUI
 struct Tut_Async_Await_1App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            QuotesView()
         }
     }
 }
