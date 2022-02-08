@@ -8,10 +8,23 @@
 import Foundation
 
 protocol QuoteServiceProtocol {
+	func fetchRandomQuotes(completion: @escaping (Result<[Quote], Error>) -> Void)
 	func fetchRandomQuotes() async throws -> [Quote]
 }
 
 final class QuoteService: QuoteServiceProtocol {
+	
+	@available(*, deprecated, renamed: "fetchRandomQuotes()")
+	func fetchRandomQuotes(completion: @escaping (Result<[Quote], Error>) -> Void) {
+		Task {
+			do {
+				let result = try await fetchRandomQuotes()
+				completion(.success(result))
+			} catch {
+				completion(.failure(error))
+			}
+		}
+	}
 	
 	func fetchRandomQuotes() async throws -> [Quote] {
 		let session = URLSession.shared
